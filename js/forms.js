@@ -1,0 +1,245 @@
+/****************************************************************************/
+// Funciones para formularios
+/* Agrega las respuestas programadas con estas funciones */
+/****************************************************************************/
+/* Modo_Dev para ubicar y remover en Modo_Pub */
+/****************************************************************************/
+/* Boton enviar, valifar forumulario */
+/*function formulario(){
+
+	var formulario = document.frmContacto,
+		elementos = formulario.elements;
+	
+	// Funcion que se ejecuta cuando el evento click es activado
+	
+	var validarInputs = function(){
+		for (var i = 0; i < elementos.length; i++) {
+			// Identificamos si el elemento es de tipo texto, email, password, radio o checkbox
+			if (elementos[i].type == "text" || elementos[i].type == "email" || elementos[i].type == "password") {
+				// Si es tipo texto, email o password vamos a comprobar que esten completados los input
+				if (elementos[i].value.length == 0) {
+					if (elementos[i].name != 'fmsj'){
+						console.log('El campo ' + elementos[i].name + ' esta incompleto');
+						if (elementos[i].name == 'asuntint'){
+							window.alert('El Asunto es obligatorio, por favor elija uno');
+						} else if (elementos[i].name == 'fname'){
+							window.alert('El Nombre es obligatorio');
+						} else if (elementos[i].name == 'ftels'){
+							window.alert('TelÃ©fonos de Contacto, es obligatorio');
+						} else if (elementos[i].name == 'fmail'){
+							window.alert('El Correo electrÃ³nico, es obligatorio');
+						}
+						elementos[i].className = elementos[i].className + " error";
+						return false;
+					}
+				} else {
+					elementos[i].className = elementos[i].className.replace(" error", "");
+				}
+			}
+		}
+	
+		// Comprobando que las contraseÃ±as coincidan
+		if (elementos.pass.value !== elementos.pass2.value) {
+			elementos.pass.value = "";
+			elementos.pass2.value = "";
+			elementos.pass.className = elementos.pass.className + " error";
+			elementos.pass2.className = elementos.pass2.className + " error";
+		} else {
+			elementos.pass.className = elementos.pass.className.replace(" error", "");
+			elementos.pass2.className = elementos.pass2.className.replace(" error", "");
+		}
+	
+		return true;
+	};
+	
+	var validarRadios = function(){
+		var opciones = document.getElementsByName('sexo'),
+			resultado = false;
+	
+		for (var i = 0; i < elementos.length; i++) {
+			if(elementos[i].type == "radio" && elementos[i].name == "sexo"){
+				// Recorremos los radio button
+				for (var o = 0; o < opciones.length; o++) {
+					if (opciones[o].checked) {
+						resultado = true;
+						break;
+					}
+				}
+	
+				if (resultado == false) {
+					elementos[i].parentNode.className = elementos[i].parentNode.className + " error";
+					console.log('El campo sexo esta incompleto');
+					return false;
+				} else {
+					// Eliminamos la clase Error del radio button
+					elementos[i].parentNode.className = elementos[i].parentNode.className.replace(" error", "");
+					return true;
+				}
+			}
+		}
+	};
+	
+	var validarCheckbox = function(){
+		var opciones = document.getElementsByName('terminos'),
+			resultado = false;
+	
+		for (var i = 0; i < elementos.length; i++) {
+			if(elementos[i].type == "checkbox"){
+				for (var o = 0; o < opciones.length; o++) {
+					if (opciones[o].checked) {
+						resultado = true;
+						break;
+					}
+				}
+	
+				if (resultado == false) {
+					elementos[i].parentNode.className = elementos[i].parentNode.className + " error";
+					console.log('El campo checkbox esta incompleto');
+					return false;
+				} else {
+					// Eliminamos la clase Error del checkbox
+					elementos[i].parentNode.className = elementos[i].parentNode.className.replace(" error", "");
+					return true;
+				}
+			}
+		}
+	};
+	
+	var enviar = function(e){
+		if (!validarInputs()) {
+			console.log('Falto validar los Input');
+			e.preventDefault();
+		} else if (!validarRadios()) {
+			console.log('Falto validar los Radio Button');
+			e.preventDefault();
+		} else if (!validarCheckbox()) {
+			console.log('Falto validar Checkbox');
+			e.preventDefault();
+		} else {
+			console.log('Envia');
+			e.preventDefault();
+		}
+	};
+	
+	var focusInput = function(){
+		this.parentElement.children[1].className = "label active";
+		this.parentElement.children[0].className = this.parentElement.children[0].className.replace("error", "");
+	};
+	
+	var blurInput = function(){
+		if (this.value <= 0) {
+			this.parentElement.children[1].className = "label";
+			this.parentElement.children[0].className = this.parentElement.children[0].className + " error";
+		}
+	};
+	
+	// --- Eventos ---
+	formulario.addEventListener("submit", enviar);
+	
+	for (var i = 0; i < elementos.length-1; i++) {
+		if (elementos[i].type == "text" || elementos[i].type == "email" || elementos[i].type == "password") {
+			elementos[i].addEventListener("focus", focusInput);
+			elementos[i].addEventListener("blur", blurInput);
+		}
+	}
+	
+}*/
+function addLstnrBtnEnviar(id,idform){
+    window.addEventListener('click', function (e) {
+        if (document.getElementById(id).contains(e.target)) {
+            // Funcion para recibir mensaje por consola Modo_Dev
+            console.log('You clicked inside');
+            validar_formulario(idform);
+            //document.getElementById(idp).className = clhide;
+            //document.getElementById(idpclose).className = clhide;
+        }
+    });
+}
+function adlitenersForm(id){
+    var btnsnd = document.getElementById(id);
+    var focusInput = function(){
+        this.parentElement.children[1].className = "label active";
+        this.parentElement.children[0].className = this.parentElement.children[0].className.replace("error", "");
+    };
+    
+    var blurInput = function(){
+        if (this.value <= 0) {
+            this.parentElement.children[1].className = "label";
+            this.parentElement.children[0].className = this.parentElement.children[0].className + " error";
+        }
+    };
+    
+    var enviar = function(e){
+        if (!validarInputs()) {
+            console.log('Falto validar los Input');
+            e.preventDefault();
+        } else if (!validarRadios()) {
+            console.log('Falto validar los Radio Button');
+            e.preventDefault();
+        } else if (!validarCheckbox()) {
+            console.log('Falto validar Checkbox');
+            e.preventDefault();
+        } else {
+            console.log('Envia');
+            e.preventDefault();
+        }
+    };
+    // --- Eventos ---
+    formulario.addEventListener(btnsnd, enviar);
+    
+    for (var i = 0; i < elementos.length-1; i++) {
+        if (elementos[i].type == "text" || elementos[i].type == "email" || elementos[i].type == "password") {
+            elementos[i].addEventListener("focus", focusInput);
+            elementos[i].addEventListener("blur", blurInput);
+        }
+    }       
+}
+function validarInputs(id){
+	var formulario = document.getElementById(id)
+        elementos = formulario.elements;
+	for (var i = 0; i < elementos.length; i++) {
+		// Identificamos si el elemento es de tipo texto, email, password, radio o checkbox
+		if (elementos[i].type == "text" || elementos[i].type == "email" || elementos[i].type == "password") {
+			// Si es tipo texto, email o password vamos a comprobar que esten completados los input
+			if (elementos[i].value.length == 0) {
+				if (elementos[i].name != 'fmsj'){
+					console.log('El campo ' + elementos[i].name + ' esta incompleto');
+					if (elementos[i].name == 'asuntint'){
+						window.alert('El Asunto es obligatorio, por favor elija uno');
+					} else if (elementos[i].name == 'fname'){
+						window.alert('El Nombre es obligatorio');
+					} else if (elementos[i].name == 'ftels'){
+						window.alert('TelÃ©fonos de Contacto, es obligatorio');
+					} else if (elementos[i].name == 'fmail'){
+						window.alert('El Correo electrÃ³nico, es obligatorio');
+					}
+					elementos[i].className = elementos[i].className + " error";
+					return false;
+				}
+			} else {
+				elementos[i].className = elementos[i].className.replace(" error", "");
+			}
+		}
+	}
+
+	// Comprobando que las contraseÃ±as coincidan
+	if (elementos.pass.value !== elementos.pass2.value) {
+		elementos.pass.value = "";
+		elementos.pass2.value = "";
+		elementos.pass.className = elementos.pass.className + " error";
+		elementos.pass2.className = elementos.pass2.className + " error";
+	} else {
+		elementos.pass.className = elementos.pass.className.replace(" error", "");
+		elementos.pass2.className = elementos.pass2.className.replace(" error", "");
+	}
+
+	return true;
+}
+function validar_formulario(id){
+    var formulario = document.getElementById(id)
+        elementos = formulario.elements;
+        console.log('validar...' + formulario.name);
+		if (validarInputs(id)) {
+			console.log('elementos...' + formulario.name);
+		}
+}
