@@ -1,0 +1,100 @@
+a {
+    color: #fff;
+    background-color: transparent;
+}
+a:hover {
+    background-color: transparent;
+    color: orange;
+}
+.contblockterm {
+    border-color: #BBDEFB;
+    color: #fff;
+    background-color: #000;
+    /* background-color: rgba(0, 0, 255, 0.3); */
+}
+hr {
+    margin-top: 21px;
+    margin-bottom: 21px;
+    border: 0;
+    border-top: 1px solid #ecf0f1;
+}
+.wrap{
+    background-color:#000000;
+    color: aliceblue;
+}
+h3{
+    color: aliceblue;
+}
+.h3adaptative{
+    color: aliceblue;
+}
+.contenedor-formulario .formulario .notaruta {
+    color: #d4d4d4;
+}
+.contenedor-formulario .formulario .input-group input[type="text"].error + label, .contenedor-formulario .formulario .input-group input[type="email"].error + label, .contenedor-formulario .formulario .input-group input[type="password"].error + label {
+    color: #e5ff00;
+}
+.contenedor-formulario .formulario .input-group label {
+    color: #e5ff00;
+}
+.contenedor-formulario .formulario .input-group label.label.active {
+    top: -12px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #e5ff00;
+}
+.contenedor-formulario .formulario .input-group.checkbox label, .contenedor-formulario .formulario .input-group.radio label {
+    display: inline-block;
+    cursor: pointer;
+    color: #e5ff00;
+    position: relative;
+    padding: 5px 15px 5px 51px;
+    font-size: 1em;
+    border-radius: 3px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.hdclg:hover{
+    color: #0004fc;
+    text-decoration: underline;
+}
+.contenedor-formulario .formulario .input-group.checkbox label:hover, .contenedor-formulario .formulario .input-group.radio label:hover {
+    background: #eb1515;
+}
+label{
+    color: #fff;
+}
+.termcond{
+    color: #fff;
+}
+.bodybkimage{
+    background-image: none;
+    background-color: #161616;
+}
+.hdclgii {
+    font-size: 20px;
+    color: #000000;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+select, option{
+    color: black;
+}
+.capast {
+    background-color: inherit;
+    border-color: #67cff8;
+    border: none;
+}
+
+.contblock {
+    border-style: none;
+    background: none;
+}
+.contblockterm {
+    border-style: none;
+}
+.contenedor-formulario {
+    border-color: #1a242f;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 15px;
+}

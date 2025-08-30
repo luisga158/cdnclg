@@ -1,0 +1,125 @@
+.spk-clg-h {
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+}
+
+.spk-cont {
+    z-index: 10000;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    top: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.spk-clg {
+    z-index: 10001;
+    background: white;
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    top: 4rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.btn-grupo-vertical {
+    width: auto;
+}
+
+/* Adaptaciones a movil */
+@media (max-width: 700px) {
+    .spk-clg {
+        width: 350px;
+    }
+
+    .spk-cont {
+        top: 1rem;
+    }
+}
+
+.imghead {
+    visibility: visible;
+}
+
+.noimghead {
+    visibility: hidden;
+}
+
+.tonoshow {
+    visibility: hidden;
+}
+
+.toshow {
+    visibility: visible;
+}
+
+.toshowmovil {
+    visibility: hidden;
+}
+
+.toshowpc {
+    visibility: visible;
+}
+
+@media (max-width: 700px) {
+    .noimghead {
+        visibility: visible;
+    }
+
+    .imghead {
+        visibility: hidden;
+    }
+
+    .toshowmovil {
+        visibility: visible;
+    }
+
+    .toshowpc {
+        visibility: hidden;
+    }
+}
+
+.textc {
+    display: flex;
+    justify-content: center;
+}
+
+.barc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textl {
+    display: flex;
+    justify-content: left;
+}
+
+.textr {
+    display: flex;
+    justify-content: right;
+}
+
+.textj {
+    display: flex;
+    justify-content: justify;
+}
+/* adaptacion del logo de encabezado par pagina */
+.imglgwc {
+    width: auto;
+    height: 2.5rem;
+}
+.nodecoration{
+    text-decoration: none;
+    color: inherit;
+}
+.alignder{
+    right: 0px;
+}

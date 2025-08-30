@@ -1,0 +1,85 @@
+.spk-cont {
+  z-index: 10000;
+  position: fixed;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  top: 0;
+  height: 100%;
+}
+.spk-clg {
+    z-index: 10001;
+    position: absolute;
+    background: white;
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    top: 4rem;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+/* Adaptaciones a movil */
+@media (max-width: 576px){
+  .spk-clg {
+    width: 350px;
+  }
+}
+#mnblock {
+    position: absolute;
+    top: 3rem;
+    right: 0rem;
+    z-index: 9;
+}
+.mapfrm{
+    width: -webkit-fill-available;
+}
+/* div desplazamiento o scrollable */
+.divscrl{
+  width: 100%;
+  height: auto;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+/* Estilos para la tabla de momento la generada desde php, copiada de program */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table, td, th {
+  border: 1px solid black;
+  padding: 5px;
+}
+th {text-align: left;}
+/* Tema blue bootstrap */
+[data-bs-theme="blue"] {
+    --bs-body-color: var(--bs-white);
+    --bs-body-color-rgb: #{to-rgb($white)};
+    --bs-body-bg: var(--bs-blue);
+    --bs-body-bg-rgb: #{to-rgb($blue)};
+    --bs-tertiary-bg: #{$blue-600};
+  
+    .dropdown-menu {
+      --bs-dropdown-bg: #{mix($blue-500, $blue-600)};
+      --bs-dropdown-link-active-bg: #{$blue-700};
+    }
+  
+    .btn-secondary {
+      --bs-btn-bg: #{mix($gray-600, $blue-400, .5)};
+      --bs-btn-border-color: #{rgba($white, .25)};
+      --bs-btn-hover-bg: #{darken(mix($gray-600, $blue-400, .5), 5%)};
+      --bs-btn-hover-border-color: #{rgba($white, .25)};
+      --bs-btn-active-bg: #{darken(mix($gray-600, $blue-400, .5), 10%)};
+      --bs-btn-active-border-color: #{rgba($white, .5)};
+      --bs-btn-focus-border-color: #{rgba($white, .5)};
+      --bs-btn-focus-box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .2);
+    }
+}
+/* para sesion la imagen que va de mitad de pantalla y desaparece en moviles adaptando facil */
+.bg-registerypre-image {
+  background: url(https://i.imgur.com/cjCvRwt.jpeg);
+  background-position: center;
+  background-size: cover
+}

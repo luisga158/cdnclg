@@ -1,0 +1,148 @@
+a {
+    color: black;
+    background-color: transparent;
+}
+a:hover {
+  color: #062af5;
+  background-color: transparent;
+}
+
+hr {
+    margin-top: 21px;
+    margin-bottom: 21px;
+    border: 0;
+    border-top: 1px solid #000000;
+}
+.myhd{
+    background-color: #000;
+    color: aliceblue;
+}
+.hdclg{
+    color: aliceblue;
+}
+.hdclg:hover{
+    color: #cefc05;
+}
+.imgbtn{
+    background-color: #062af5;
+    border-radius: 21px;
+}
+.wrap{
+    background-color:#fff;
+    color: #000;
+}
+h3{
+    color: #000;
+}
+.h3adaptative{
+    color: #000;
+}
+.contenedor-formulario .formulario .input-group input[type="text"],
+  .contenedor-formulario .formulario .input-group input[type="email"],
+  .contenedor-formulario .formulario .input-group input[type="password"] {
+    font-family: "Roboto";
+    font-size: 16px;
+    background-color: #303F9F;
+    color: #000000;
+    width: 100%;
+    outline: none;
+    padding: 15px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #BBDEFB;
+}
+.contenedor-formulario .formulario .input-group label.label.active {
+    top: -12px;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgb(0, 0, 0);
+}
+.contenedor-formulario .formulario .notaruta {
+    color: #000;
+}
+.contenedor-formulario .formulario .input-group input[type="text"].error + label, .contenedor-formulario .formulario .input-group input[type="email"].error + label, .contenedor-formulario .formulario .input-group input[type="password"].error + label {
+    color: #000;
+}
+.contenedor-formulario .formulario .input-group label.label {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 16px;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    color: #000;
+}
+.contenedor-formulario .formulario .input-group.checkbox label, .contenedor-formulario .formulario .input-group.radio label {
+    display: inline-block;
+    cursor: pointer;
+    color: #e74c3c;
+    position: relative;
+    padding: 5px 15px 5px 51px;
+    font-size: 1em;
+    border-radius: 3px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.bodybkimage{
+    background-image: none;
+    background-color: #cfcaca;
+    border: #000000;
+}
+.hdclgii {
+    font-size: 20px;
+    color: #000;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.capast {
+    background-color: inherit;
+    color:black;
+    border-color: #303F9F;
+    border: none;
+}
+
+table>thead>tr>th,
+.table>thead>tr>th,
+table>tbody>tr>th,
+.table>tbody>tr>th,
+table>tfoot>tr>th,
+.table>tfoot>tr>th,
+table>thead>tr>td,
+.table>thead>tr>td,
+table>tbody>tr>td,
+.table>tbody>tr>td,
+table>tfoot>tr>td,
+.table>tfoot>tr>td {
+    border: 1px solid black;
+}
+
+table, td, th, tr {
+    color:black;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#capa{
+    color: #000000;
+}
+.fleXpace{
+    color: #fff;
+}
+.contenedor-formulario {
+    border-color: #1a242f;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.contblock {
+    border-style: none;
+    background: none;
+}
+.contblockterm {
+    border-style: none;
+}
+.hdlbl {
+    color: #000;
+}

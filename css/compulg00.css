@@ -1,0 +1,1915 @@
+/*****************************************************************************/
+/* Estilos que le di a la pagina de indice y Fin de copy bootstrp */
+/* Basicamente son los estilos iniciales que se declaran, sin embargo conservo aun el bootstrp min */
+/*****************************************************************************/
+/*---------------------------------------------------------------------
+	Estilo para el cuerpo de la pagina de mi indice
+---------------------------------------------------------------------*/
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    /** Reset para REMS - 62.5% = 10px de 16px **/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0em 0em 0em 0px;
+    margin: 0;
+    font-family: sans-serif;
+    color: black;
+    background-color: black;
+    display: block;
+}
+
+.bodybkimage{
+    background-image: url(https://i.imgur.com/PggffQW.png);
+    background-position: top left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    color: #fff;
+    background-color: transparent;
+}
+
+a:hover {
+    color: #96a5a5;
+}
+
+/* ------------------------------------------------------------------------- */
+/*****************************************************************************/
+/* Css para pagina Index Personal actualmente en desarrollo en mypartials */
+/*****************************************************************************/
+/* ------------------------------------------------------------------------- */
+/*****************************************************************************/
+/* Contenedor para cabecera con logo y menus my partials */
+/*****************************************************************************/
+.myhd {
+    position: fixed;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 9vh;
+    background-color: #ffffff;
+}
+
+/* Contenedor para cabecera como el anterior sin fondo */
+.myhdbknone {
+    position: fixed;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 9vh;
+}
+
+/* Logo contenido en myhd */
+.contlogomh {
+    margin-top: 1vh;
+    margin-left: 80px;
+    text-align: left;
+}
+
+/* imagen del logo contenido en contlogomh */
+.imglogomh {
+    width: auto;
+    height: 7vh;
+}
+
+/* Texto del encabezado al lado derecho del logo */
+.hdclg {
+    font-size: 20px;
+    color: #000;
+    font-family: 'Cormorant Unicase', serif;
+}
+@media (max-width: 768px) {
+.contlogomh {
+    margin-top: 1vh;
+    margin-left: 50px;
+    text-align: left;
+}
+.hdclg{
+    font-size: 15px;
+}
+}
+/*****************************************************************************/
+/* Estilos para cabecera de clg con la imagen clasica */
+/*****************************************************************************/
+/* iniciando una cabecera desde my partials para el incio */
+.siteheader-clg {
+    background-image: url(https://i.imgur.com/UrqYe1g.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+    min-height: 30rem;
+    color: #fff;
+    position: relative;
+    top: 9vh;
+}
+
+@media (max-width: 768px) {
+    .siteheader-clg {
+        min-height: 25rem;
+    }
+}
+
+/* Estilo de texto elegido para encabezados en header clg */
+.hdclgcont {
+    padding-top: 3vw;
+    line-height: 1;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Cormorant Unicase', serif;
+}
+
+.hdclgcontlr {
+    padding-top: 3vw;
+    line-height: 1;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Cormorant Unicase', serif;
+}
+
+@media screen and (max-width: 600px) {
+    .hdclgcont {
+        padding-top: 25px;
+        font-size: 25px;
+    }
+    .hdclgcontlr {
+        padding-top: 25px;
+        font-size: 25px;
+    }
+}
+
+/* css Contenedor para logo imagen e incio.html */
+.contlogo {
+    padding: 1vw;
+    text-align: center;
+}
+
+.imglogo {
+    width: 20vw;
+    height: auto;
+}
+
+/*****************************************************************************/
+/* Contenedor propio que incluye un titulo principal, y subtitulos, con contenido que muestra al presionar  */
+/*****************************************************************************/
+/* Contenedor principal */
+.contindexoldstyle {
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 1vh;
+    border-style: solid;
+    border-color: #fff;
+    margin-top: 12vh;
+}
+
+/* Subcontenedor o subclase del cont. principal */
+.continicio {
+    display: inline-block;
+    width: 95%;
+    height: auto;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    align-content: center;
+    align-items: center;
+}
+
+/* Titulo principal */
+.lgttl {
+    display: block;
+    color: #fff;
+    /*background-color: #1f8dd6;*/
+    font-size: 35px;
+    margin: 0px;
+    padding: 10px;
+    border-radius: 10px;
+    align-self: center;
+    font-family: 'Della Respira', serif;
+}
+
+/* Contenedor para contenedores con ttl y contenido boxtottltxtblck */
+.contblock {
+    display: block;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 1vw;
+    background-color: rgba(0, 0, 255, 0.3);
+}
+
+/* Contenedor para ttl y contenido */
+.boxtottltxtblck {
+    display: block;
+    width: auto;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    border-style: solid;
+    min-width: 40vw;
+    background-color: rgba(0, 0, 255, 0.3);
+}
+
+/* Estilo para el ttl */
+.hdlbl {
+    font-family: 'Della Respira', serif;
+    width: 100%;
+    color: #fff;
+    font-size: 25px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: solid;
+}
+
+/* Estilos para el contenido visible */
+.linkscont {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    margin: 1vw;
+    line-height: 170%;
+	border-bottom: groove;
+}
+
+/* Y oculto - Usado para marcar que fue clicado */
+.hdlblclkd {
+    border-style: none;
+}
+
+/* ------------------------------------------------------------------------- */
+/*****************************************************************************/
+/* Estilos usados en jquerry */
+/*****************************************************************************/
+/* ------------------------------------------------------------------------- */
+/*****************************************************************************/
+/* Contenedor usado en el index jquery */
+/*****************************************************************************/
+.continlineflex {
+    display: inline-flex;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 1vw;
+    background-color: rgba(0, 0, 255, 0.3);
+}
+
+/* ------------------------------------------------------------------------- */
+/*****************************************************************************/
+/* Estilos de texto */
+/*****************************************************************************/
+/* ------------------------------------------------------------------------- */
+.txtabel {
+    font-family: 'Comfortaa', cursive;
+}
+
+.txtComforta10 {
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 2px;
+    font-size: 14px;
+    line-height: 170%;
+}
+
+.txtchango {
+    font-family: 'Chango', cursive;
+}
+
+.txtdellarespira {
+    font-family: 'Della Respira', serif;
+}
+
+.txtdellarespira30 {
+    font-family: 'Della Respira', serif;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+.txtubuntu20px {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Tipo de texto Barlow */
+.fbarlow {
+    font-family: 'Barlow', sans-serif
+}
+
+/* fuente monserrat 20px center  */
+.fmoserrat {
+    background-color: #fff;
+    padding-top: 3vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    line-height: 2;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Utilidad para centrar texto */
+.centrar-texto {
+    text-align: center;
+}
+
+/* If screen size is 600px wide, or less, change set */
+@media screen and (max-width: 600px) {
+    .contindexoldstyle {
+        text-align: center;
+        margin: 0px;
+        border-radius: 0px;
+        padding: 0px;
+        border-style: none;
+        margin-top: 8vh;
+    }
+
+    .continicio {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .imglogo {
+        width: 50vw;
+        height: auto;
+    }
+
+    .lgttl {
+        width: 94%;
+        margin: 3vw;
+        font-size: 18px;
+    }
+
+    .boxtottltxt {
+        display: inline-block;
+    }
+
+    .continlineflex {
+        display: inline-block;
+        border-style: none;
+        width: 98%;
+    }
+
+    .hdlbl {
+        font-size: 20px;
+    }
+
+    .hdlblmid {
+        font-size: 20px;
+        padding: 2vw;
+    }
+
+    .linkscont {
+        font-size: 16px;
+    }
+}
+
+/* ------------------------------------------------------------------------- */
+/*****************************************************************************/
+/* Estilos para menus */
+/*****************************************************************************/
+/* ------------------------------------------------------------------------- */
+/*****************************************************************************/
+/* Estilos para barra de redes sociales */
+/*****************************************************************************/
+.boton_share_contain {
+    position: fixed;
+    top: 101px;
+    right: 10px;
+    z-index: 9999;
+}
+
+.img_share {
+    width: 35px;
+    height: 35px;
+}
+
+@media screen and (max-width: 600px) {
+    .img_share {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/*********************************************************************/
+/* Menu izquierdo */
+/*********************************************************************/
+/* Contenedor del menu izq y sus componentes */
+.contcontcarretizq {
+    background: #c3c3c3;
+    border-radius: 35px;
+    position: fixed;
+    z-index: 3;
+    top: 12px;
+    left: 12px;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+/* Contenedor del icono de menu izq */
+.contcarretizq {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    width: 19px;
+    height: 19px;
+    background: #fff;
+    border-radius: 35px;
+    padding-top: 1px;
+}
+
+/* Clase para ocultar Contenedor del menu izq */
+.menuslideizq {
+    display: none;
+}
+
+/* Clase para mostrar Contenedor del menu izq */
+.menuslidshwizq {
+    position: relative;
+    margin-top: 15px;
+    top: 7px;
+    display: block;
+    background-color: #fff;
+    width: 500px;
+    max-width: 980px;
+    height: auto;
+    border-style: solid;
+    border-color: #f1f1f1;
+}
+
+/* Iconos más pequeños para el menu izquierdo */
+.contcontcarretsmizq {
+    background: #c3c3c3;
+    border-radius: 25px;
+    position: fixed;
+    z-index: 3;
+    top: 12px;
+    left: 12px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.contcarretsmizq {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 14px;
+    padding-top: 0px;
+}
+
+/* Clase para mostrar Contenedor del menu izq */
+.menuslidshwsmizq {
+    position: relative;
+    margin-top: 15px;
+    top: 7px;
+    display: block;
+    background-color: #fff;
+    width: 500px;
+    max-width: 980px;
+    height: auto;
+    border-style: solid;
+    border-color: #f1f1f1;
+}
+
+/* Clase para mostrar Contenedor del menu izq delgado */
+.mnsldshwizqdelgado {
+    position: relative;
+    margin-top: 15px;
+    top: 7px;
+    display: block;
+    background-color: #fff;
+    width: 70px;
+    max-width: 150px;
+    height: auto;
+    border-style: solid;
+    border-color: #f1f1f1;
+}
+
+/*********************************************************************/
+/* Menu derecho */
+/*********************************************************************/
+/* Contenedor del menu der y sus componentes */
+.contcontcarretder {
+    background: #c3c3c3;
+    border-radius: 35px;
+    position: fixed;
+    z-index: 3;
+    top: 12px;
+    right: 12px;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+/* Contenedor del icono de menu der */
+.contcarretder {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 19px;
+    height: 19px;
+    background: #fff;
+    border-radius: 35px;
+    padding-top: 1px;
+}
+
+/* Clase para ocultar Contenedor del menu der */
+.menuslidere {
+    display: none;
+}
+
+/* Clase para mostrar Contenedor del menu der */
+.menuslidshwder {
+    position: relative;
+    top: 7px;
+    right: 485px;
+    margin-top: 15px;
+    display: block;
+    background-color: #fff;
+    width: 500px;
+    max-width: 980px;
+    height: auto;
+    border-style: solid;
+    border-color: #f1f1f1;
+}
+
+/* Iconos más pequeños para el menu izquierdo */
+.contcontcarretsmder {
+    background: #c3c3c3;
+    border-radius: 25px;
+    position: fixed;
+    z-index: 3;
+    top: 12px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.contcarretsmder {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 14px;
+    padding-top: 2px;
+    margin-right: 5px;
+    font-size: 80%;
+}
+
+.menuslidsmshwder {
+    position: relative;
+    top: 7px;
+    right: 485px;
+    margin-top: 15px;
+    display: block;
+    background-color: #fff;
+    width: 500px;
+    max-width: 980px;
+    height: auto;
+    border-style: solid;
+    border-color: #f1f1f1;
+}
+
+/* Adaptando a moviles */
+@media screen and (max-width: 600px) {
+    .menuslidshwder {
+        position: relative;
+        top: 7px;
+        right: 180px;
+        margin-top: 15px;
+        display: block;
+        background-color: #fff;
+        width: 200px;
+        height: auto;
+        border-style: solid;
+        border-color: #f1f1f1;
+    }
+
+    .menuslidsmshwder {
+        position: relative;
+        top: 7px;
+        right: 180px;
+        margin-top: 15px;
+        display: block;
+        background-color: #fff;
+        width: 200px;
+        height: auto;
+        border-style: solid;
+        border-color: #f1f1f1;
+    }
+}
+
+/*********************************************************************/
+/* Contenedor los iconos laterales */
+/*********************************************************************/
+/* Contenedores icono izq mid */
+.contcontcarretmidizq {
+    background: #c3c3c3;
+    border-radius: 35px;
+    position: fixed;
+    z-index: 3;
+    top: 262px;
+    left: 12px;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.contcarretmidizq {
+    position: fixed;
+    top: 265px;
+    left: 15px;
+    width: 19px;
+    height: 19px;
+    background: #fff;
+    border-radius: 35px;
+    padding-top: 1px;
+    padding-right: 2px;
+}
+
+/* Contenedores icono izq mid min size */
+.contcontcarretmidizqsm {
+    background: #c3c3c3;
+    border-radius: 25px;
+    position: fixed;
+    z-index: 3;
+    top: 262px;
+    left: 12px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.contcarretmidizqsm {
+    position: fixed;
+    top: 265px;
+    left: 15px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 14px;
+    padding-right: 2px;
+}
+
+/* Contenedores icono der mid */
+.contcontcarretmidder {
+    background: #c3c3c3;
+    border-radius: 35px;
+    position: fixed;
+    z-index: 3;
+    top: 262px;
+    right: 12px;
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.contcarretmidder {
+    position: fixed;
+    top: 265px;
+    right: 20px;
+    width: 19px;
+    height: 19px;
+    background: #fff;
+    border-radius: 35px;
+    padding-top: 1px;
+    padding-left: 2px;
+}
+
+/* Contenedores icono der mid min size */
+.contcontcarretmiddersm {
+    background: #c3c3c3;
+    border-radius: 25px;
+    position: fixed;
+    z-index: 3;
+    top: 262px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.contcarretmiddersm {
+    position: fixed;
+    top: 265px;
+    right: 20px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 14px;
+    padding-left: 2px;
+}
+
+/*********************************************************************/
+/* Creando mi css para flecha abajo de menu flotante sin font-awesome, me falta un contenedor, va triangulo, cuadro, circle */
+/*********************************************************************/
+.arw-dwn {
+    position: relative;
+    background-color: #fff;
+    width: 0;
+    height: 0;
+    border-top: 100px solid #000;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+}
+
+.cont-arw-dwn {
+    background-color: yellow;
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+    display: block;
+    top: 10px;
+    left: 10px;
+}
+
+/*********************************************************************/
+/* Copiando efectos con javascript */
+/*********************************************************************/
+progress {
+    margin: 7px;
+    width: 50%;
+}
+
+/* ------------------------------------------------------------------------- */
+/*********************************************************************/
+/* Inicio de estilos para contenedores y clases de muestras */
+/*********************************************************************/
+/* ------------------------------------------------------------------------- */
+/*********************************************************************/
+/* Barra creada para experimentos don ricardo */
+/*********************************************************************/
+/* globales */
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    /** = 1200px; **/
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ------------------------------------------------------------------------- */
+/*************************************************************************/
+/* Estilos de cabeceras */
+/*************************************************************************/
+/* ------------------------------------------------------------------------- */
+/*************************************************************************/
+/*                  Cabecera y Navegacion                                */
+/*************************************************************************/
+/* Clase para cabecera inicio */
+.site-header {
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+    font-family: 'Shippori Mincho B1', serif;
+}
+
+.site-header.inicio {
+    background-image: url(https://i.imgur.com/smVxqVV.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .site-header.inicio {
+        background-image: url(https://i.imgur.com/smVxqVV.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 100vh;
+        min-height: auto;
+    }
+}
+
+.contenido-header {
+    text-align: center;
+}
+
+.contenido-header h1 {
+    color: #ffffff;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 10px;
+    padding-bottom: 1rem;
+    width: 100vw;
+    line-height: 1;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+.contenido-header p {
+    font-size: 15px;
+    padding-left: 1vw;
+    padding-right: 5vw;
+    padding-top: 5vw;
+    color: #ffffff;
+    width: 100vw;
+    line-height: 2;
+    text-align: center;
+    /*font-family: 'Barlow', sans-serif;*/
+    /*font-family: 'Montserrat', sans-serif;*/
+    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+@media (min-width: 768px) {
+    .contenido-header h1 {
+        color: #ffffff;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        padding-top: 40px;
+        padding-bottom: 2rem;
+        width: 100vw;
+        line-height: 1;
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        font-size: 38px;
+    }
+
+    .contenido-header p {
+        font-size: 25px;
+        padding-left: 20vw;
+        padding-right: 20vw;
+        padding-top: 5vw;
+        color: #ffffff;
+        width: 100vw;
+        line-height: 3;
+        text-align: center;
+        font-family: 'Barlow', sans-serif;
+    }
+}
+
+/* contiene navegacion, navegacionpc (solo id, usa clase navegacion), y navegacionhd */
+.barra {
+    height: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+}
+
+/** Navegacion **/
+
+.navegacion a {
+    display: inline-flex;
+    font-size: 1.8rem;
+    /** = 18px **/
+    margin-right: 4rem;
+    color: white;
+}
+
+.navegacion a:last-of-type {
+    margin: 0;
+}
+
+.navegacion a:hover {
+    color: #71B100;
+}
+
+.navegacion {
+    display: block;
+}
+
+.navegacionpc {
+    display: none;
+}
+
+.navegacionpc a {
+    display: block;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.navegacionpc a:hover {
+    color: #71B100;
+}
+
+@media (min-width: 768px) {
+    .navegacionpc {
+        display: block;
+        text-align: left;
+        padding-left: 10px;
+
+    }
+
+    .navegacionpc a {
+        display: inline-block;
+        font-size: 1.8rem;
+        /** = 18px **/
+        margin-right: 4rem;
+        color: white;
+        text-align: left;
+    }
+
+    .navegacionpc a:last-of-type {
+        margin: 0;
+    }
+}
+
+.navegacion-movil a {
+    display: inline;
+    margin-right: 1rem;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+@media (min-width: 768px) {
+    .navegacion-movil a {
+        display: inline;
+        margin-right: 1rem;
+        color: white;
+        text-align: center;
+        font-size: 22px;
+    }
+}
+
+/** Mobile Menu **/
+.mobile-menu-lg {
+    display: inline-block;
+}
+
+.mobile-menu-lg img {
+    width: 10rem;
+    padding: 5px;
+}
+
+.ico-menu {
+    width: 60px;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .mobile-menu-lg {
+        display: none;
+    }
+
+    .mobile-menu-lg img {
+        width: 10rem;
+        padding: 5px;
+    }
+
+    .ico-menu {
+        width: 200px;
+    }
+}
+
+/*************************************************************************/
+/*            Estilos del menu lateral izquierdo #mySidenav              */
+/*************************************************************************/
+.sidenav {
+    font-family: "Lato", monospace;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    align-content: center;
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/* Otra cabecera y seccion de Lonja */
+
+.siteheader-avaluos {
+    background-image: url(https://i.imgur.com/GGGPEjd.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+    color: #fff;
+    text-align: center;
+}
+
+.sitecont-avaluos {
+    background-image: url(https://i.imgur.com/Vub07k4.png);
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    height: auto;
+    min-height: auto;
+    color: #fff;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .siteheader-avaluos {
+        background-image: url(https://i.imgur.com/GGGPEjd.jpg);
+        background-position: center center;
+        background-size: cover;
+        width: 100vw;
+        height: auto;
+        min-height: 75vh;
+    }
+
+    .sitecont-avaluos {
+        background-image: url(https://i.imgur.com/Vub07k4.png);
+        background-position: center center;
+        background-size: cover;
+        width: 100vw;
+        height: auto;
+        min-height: auto;
+    }
+}
+
+/* Encabezado Historia */
+.hstryhd {
+    padding-top: 3vw;
+    line-height: 1;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Cormorant Unicase', serif;
+}
+
+/* Encabezado Historia Negro*/
+.hstryhdblack {
+    padding-top: 3vw;
+    line-height: 1;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    font-family: 'Cormorant Unicase', serif;
+}
+
+/* Parrafo Historia */
+.hstryp {
+    padding-top: 1vw;
+    line-height: 2;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Parrafo Historia otra fuente */
+.hstryps {
+    padding-top: 1vw;
+    line-height: 2;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    color: #D8D8D8;
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    .hstryhd {
+        padding-top: 25px;
+        font-size: 30px;
+    }
+
+    .hstryhdblack {
+        padding-top: 25px;
+        font-size: 30px;
+    }
+    .hstryp {
+        padding-top: 5px;
+        font-size: 16px;
+    }
+
+    .hstryps {
+        padding-top: 5px;
+        font-size: 16px;
+    }
+}
+
+/* ------------------------------------------------------------------------- */
+/*************************************************************************/
+/* seccion de contenedores */
+/*************************************************************************/
+/* ------------------------------------------------------------------------- */
+/*************************************************************************/
+/* Contenedores más sobre nosotros */
+/*************************************************************************/
+/* Contenedor con fondo negro texto blanco 20px ( 16px en moviles ) Moserrat pad 2vw lineheight 2  */
+.containerlgbkblck {
+    background-color: black;
+    padding: 2vw;
+    line-height: 2;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Contenedor con fondo blanco y texto negro 20px ( 16px en moviles ) Moserrat pad 2vw lineheight 2  */
+.containerlgbkwht {
+    padding: 2vw;
+    line-height: 2;
+    text-align: center;
+    font-size: 20px;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Adaptacion containerlg */
+@media screen and (max-width: 600px) {
+    .containerlgbkblck {
+        font-size: 16px;
+    }
+
+    .containerlgbkwht {
+        font-size: 16px;
+    }
+}
+
+/** Iconos Nosotros **/
+@media (min-width: 768px) {
+    .iconos-nosotros {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.icono {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .icono {
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+
+.icono h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.icono img {
+    max-height: 200px;
+    width: auto;
+}
+
+/**************************************************************************/
+/*            Contenedores tipo grid de diversas caracteristicas          */
+/**************************************************************************/
+/* Grida con seccion izquierda con un titulo y abajo para parrafo y a la derecha la imagen  3 items*/
+.itmlgser1 {
+    grid-area: header;
+}
+
+.itmlgser2 {
+    grid-area: imagen;
+}
+
+.itmlgser3 {
+    grid-area: cont;
+}
+
+.grid-cont-lg-serv {
+    display: grid;
+    padding: 0px;
+    grid-template-areas: 'header header header imagen imagen imagen'
+        'cont cont cont imagen imagen imagen'
+        'cont cont cont imagen imagen imagen';
+    background-color: #fff;
+    grid-gap: 5px;
+}
+
+.grid-cont-lg-serv>div {
+    align-content: center;
+    text-align: center;
+    padding: 0px;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Como el anterior pero fondo negro txt blanco */
+.grid-cont-lg-serv-blk {
+    display: grid;
+    padding: 0px;
+    grid-template-areas: 'header header header imagen imagen imagen'
+        'cont cont cont imagen imagen imagen'
+        'cont cont cont imagen imagen imagen';
+    background-color: #000;
+    grid-gap: 5px;
+}
+
+.grid-cont-lg-serv-blk>div {
+    align-content: center;
+    text-align: center;
+    padding: 0px;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Como el anterior pero imagen a la izquierda */
+/* uso los mismos items para reducir codigo */
+.grid-cont-lg-servimglft {
+    display: grid;
+    padding: 0px;
+    grid-template-areas: 'imagen imagen imagen header header header'
+        'imagen imagen imagen cont cont cont'
+        'imagen imagen imagen cont cont cont';
+    background-color: #fff;
+    grid-gap: 0px;
+}
+
+.grid-cont-lg-servimglft>div {
+    text-align: center;
+    padding: 0px;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Como el anterior pero fondo negro txt blanco */
+.grid-cont-lg-servimglft-blk {
+    display: grid;
+    padding: 0px;
+    grid-template-areas: 'imagen imagen imagen header header header'
+    'imagen imagen imagen cont cont cont'
+    'imagen imagen imagen cont cont cont';
+    background-color: #000;
+    grid-gap: 5px;
+}
+
+.grid-cont-lg-servimglft-blk>div {
+    align-content: center;
+    text-align: center;
+    padding: 0px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+    .grid-cont-lg-serv {
+        grid-template-areas: 'header header header header header header'
+            'imagen imagen imagen imagen imagen imagen'
+            'cont cont cont cont cont cont';
+        grid-gap: 0px;
+    }
+
+    .grid-cont-lg-serv>div {
+        padding: 0px;
+    }
+
+    .grid-cont-lg-serv-blk {
+        grid-template-areas: 'header header header header header header'
+            'imagen imagen imagen imagen imagen imagen'
+            'cont cont cont cont cont cont';
+        grid-gap: 0px;
+    }
+
+    .grid-cont-lg-serv-blk>div {
+        padding: 0px;
+    }
+
+    .grid-cont-lg-servimglft {
+        grid-template-areas: 'header header header header header header'
+            'imagen imagen imagen imagen imagen imagen'
+            'cont cont cont cont cont cont';
+        grid-gap: 0px;
+    }
+
+    .grid-cont-lg-servimglft>div {
+        padding: 0px;
+    }
+
+    .grid-cont-lg-servimglft-blk {
+        grid-template-areas: 'header header header header header header'
+            'imagen imagen imagen imagen imagen imagen'
+            'cont cont cont cont cont cont';
+        grid-gap: 0px;
+    }
+
+    .grid-cont-lg-servimglft-blk>div {
+        padding: 0px;
+    }
+}
+
+/* Contenedores creados para nosotros en Lonja Page */
+/* Contenedor sin fondo texto blanco 20px ( 16px en moviles ) Moserrat pad 2vw lineheight 2  */
+.containerlg {
+    padding: 2vw;
+    line-height: 2;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    .containerlg {
+        font-size: 16px;
+    }
+}
+
+/* contenedores de seis ideogramas que se esconde y muestra imagen en moviles */
+.containerlg-iconsxsix {
+    margin-bottom: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: #000;
+    max-height: 25vh;
+    width: 70%;
+    text-align: center;
+    font-size: 22px;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Barlow', sans-serif;
+}
+
+#iconsix-to-pc {
+    display: block;
+    margin-bottom: 3vh;
+}
+
+#iconsix-to-movil {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    #iconsix-to-pc {
+        display: none;
+    }
+
+    #iconsix-to-movil {
+        display: block;
+    }
+}
+
+/* contenedor para pie de página */
+.foot-lg {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+/* title Cormorant 40px  */
+.hcormorant {
+    padding-top: 1vw;
+    line-height: 1;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Cormorant Unicase', serif;
+}
+
+/* Parrafo monserrat 20px 5vw margin lr pad-top 1vw */
+.pmoserrat {
+    padding-top: 1vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    line-height: 2;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* title Montserrat 40px  */
+.hmonserrat {
+    padding-top: 1vw;
+    line-height: 1;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    .hcormorant {
+        padding-top: 25px;
+        font-size: 30px;
+    }
+
+    .pmoserrat {
+        padding-top: 20px;
+        font-size: 16px;
+    }
+
+    .hmonserrat {
+        padding-top: 25px;
+        font-size: 30px;
+    }
+}
+
+/* Contenedor para articulos inline-block ancho 30vw align top margin 15px */
+.artcltwntxcent {
+    width: 30vw;
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px;
+    text-align: center;
+}
+
+/* Contiene el titulo del articulo fontsize 40px */
+.ttltwntxcent {
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Contiene el contenido del articulo fontsize 16px */
+.conttwntxcent {
+    width: 30vw;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Adaptacion artcltwntxcent y sub-secciones */
+@media screen and (max-width: 600px) {
+    .artcltwntxcent {
+        display: block;
+        width: 100vw;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .ttltwntxcent {
+        width: 100vw;
+        font-size: 20px;
+    }
+
+    .conttwntxcent {
+        width: 90vw;
+        font-size: 16px;
+    }
+}
+
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: main;
+}
+
+.item3 {
+    grid-area: header2;
+}
+
+.item4 {
+    grid-area: right;
+}
+
+
+.grid-cont-lg {
+    display: grid;
+    padding: 0px;
+    grid-template-areas: 'header header header header2 header2 header2'
+        'main main main right right right'
+        'main main main right right right';
+    background-color: #D8D8D8;
+    grid-gap: 5px;
+}
+
+.grid-cont-lg>div {
+    text-align: center;
+    padding: 0px;
+    font-size: 30px;
+    background-color: #000;
+}
+
+@media screen and (max-width: 600px) {
+    .grid-cont-lg {
+        grid-template-areas: 'header header header header header header'
+            'main main main main main main'
+            'header2 header2 header2 header2 header2 header2'
+            'right right right right right right';
+        padding: 0px;
+        margin: 0px;
+        box-shadow: 0px 0px #000;
+        grid-gap: 0px;
+        border-radius: 0px;
+    }
+
+    .grid-cont-lg>div {
+        border-radius: 0px;
+        padding: 0px;
+    }
+}
+
+/**************************************************************************/
+/* Animacion para el logo */
+/**************************************************************************/
+.imglogomh{
+    animation-name: stretch;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes stretch {
+    0% {
+        transform: scale(5);
+    }
+    30% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(359deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* texto slide in */
+.hdclg {  
+    animation-name: slideinh;
+    animation-duration: 3s;
+    }  
+    @keyframes slideinh {
+    from {
+    margin-left: 100%;
+    width: 300%
+    }to {  
+    margin-left: 0%;
+    width: 100%;
+    }
+}
+.hdclgcont{
+    animation-name: slidein;
+    animation-duration: 3s;
+    }  
+    @keyframes slidein {
+    from {
+    left: 100%;
+    width: 300%
+    }to {  
+    left: 0%;
+    width: 100%;
+    }
+}
+.hdclgcontlr{
+    animation-name: slideinlr;
+    animation-duration: 3s;
+    }  
+    @keyframes slideinlr {
+    from {
+        right: 0%;
+        width: 50%;
+    }to {  
+        right: 100%;
+        width: 100%
+    }
+}
+/**************************************************************************/
+/* Slier 1 */
+/**************************************************************************/
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Y finalmente las animaciones */
+.fadeone {
+    -webkit-animation-name: fadeone;
+    -webkit-animation-duration: 1.75s;
+    animation-name: fadeone;
+    animation-duration: 1.75s;
+}
+
+@-webkit-keyframes fadeone {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeone {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Estilos cabercera salud y nutricion */
+section{
+    position: relative;
+    --widgets-spacing: 20px;
+    transition: background 0.3s,border 0.3s,border-radius 0.3s,box-shadow 0.3s;
+    padding: 50px 20px 50px 20px;
+    background-color: transparent;
+    background-image: linear-gradient(60deg,#000000 50%,#3D1568 88%);    
+}
+.divhdsect{
+    display: flex;
+    flex-direction:row;
+}
+
+.cont-margen{
+    display: block;
+    margin: 10px;
+    box-sizing : border-box; 
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+}
+
+.sect-izq{
+    box-sizing : border-box;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.sect-der{
+    box-sizing : border-box;
+    width:auto;
+    
+}
+.sect-izq h2{
+    width:auto;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #FFF;
+    font-family: "Montserrat",Sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.3em;
+    box-sizing : border-box; 
+}
+
+.sect-izq p{
+    width:auto;
+    color: #FFF;
+    font-family: "Montserrat",Sans-serif;
+    overflow-wrap: break-word;
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+    section{
+        padding: 10px 4px 10px 4px;
+    }
+    .divhdsect{
+        display: block;
+    }
+}
+
+
+/* Clases para botones */
+.cont-btns{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.btn-base-bp{
+    color: #FFF;
+    font-family: sans-serif;
+    font-size: 18px;
+    border: none;
+    align-content: center;
+    margin: 5px 5px;
+    width: auto;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.bk-purple{
+    background-color: #7905B3;
+}
+
+.bk-fucsia{
+    background-color: #B30596;
+}
+
+.bk-red{
+    background-color: red;
+}
+
+.bk-blue{
+    background-color: blue;
+}
+
+.left-align{
+    text-align: left;
+}
+
+.inner-space {
+    margin-right: 10px;
+    margin-left: 15px;
+    padding-left: 8px;
+    padding-right: 12px;
+}
+
+.fifty-percent{
+    width: 50%;
+}
+
+.spk-clg{
+    background: white;
+    color:#000;
+    display: block;
+    z-index: 99;
+    position:fixed;
+    width: 70%;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 15%;
+    border-radius: 30px;
+}
+
+.spk-clg-close{
+    position: absolute;
+    width: 10%;
+    margin-left: 96%;
+    margin-top: 2%;
+}
+
+.spk-clg-close a{
+    color: blue;
+}
+
+@media screen and (max-width: 600px) {
+    .spk-clg{
+        margin-top: 25%;
+    }
+}
+
+/* Clase para ocultar cualquier contenedor */
+.hidecont {
+    display: none;
+    width:0px;
+    height:0px;
+}
+
+/* Clases para atencion al cliente I */
+
+.atncn-clt{
+    background: white;
+    color:#000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 15%;
+    border-radius: 30px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#atcn-ctemvl{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    #atcn-cte{
+        display: none;
+    }
+    .myhd{
+        height: 12vh;
+    }
+    .atncn-clt{
+        margin-top: 30%;
+    }
+}
